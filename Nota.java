@@ -24,6 +24,7 @@ public class Nota {
 
             }
         }
+        System.out.println("Teste de push");
     }
 
 }
