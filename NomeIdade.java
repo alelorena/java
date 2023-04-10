@@ -1,10 +1,8 @@
+
 //import java.util.InputMismatchException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
-/** 
- * Faça um programa que leia conjuntos de dois valores, 
- * o primeiro representando o nome do aluno e o segundo representando a sua idade.
- * Pare o programa inserindo o valor 0 no campo nome.
-*/
+
 public class NomeIdade {
 
     public static void main(String[] args) {
@@ -12,19 +10,28 @@ public class NomeIdade {
         try (Scanner scan = new Scanner(System.in)) {
             String nome;
             int idade;
-            while(true) {
+            while (true) {
                 System.out.println("Nome: ");
                 nome = scan.next();
-                if (nome.equals("0")) break;
+                if (nome.equals("0"))
+                    break;
+                try {
+                    System.out.println("Idade: ");
+                    idade = scan.nextInt();
 
-                System.out.println("Idade: ");
-                
-                idade = scan.nextInt();
+                    if (idade < 0) {
+                        System.out.println("Idade inválida! Insira um valor maior ou igual a zero.");
+                        continue; // volta para o início do loop
+                    }
+
+                    // fazer algo com o nome e idade
+                } catch (InputMismatchException e) {
+                    System.out.println("Idade inválida! Tente novamente.");
+                    scan.nextLine(); // limpar o buffer de entrada
                 }
+            }
         }
-        
+
         System.out.println("Foi inserido o valor 0. O programa foi parado!");
-
-
     }
 }
