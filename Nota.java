@@ -24,7 +24,7 @@ public class Nota {
 
             }
         }
-        System.out.println("Teste de push");
+        //System.out.println("Teste de push");
     }
 
 }
