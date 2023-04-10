@@ -8,32 +8,29 @@ import java.util.Scanner;
 
 public class Nota {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
         double nota;
 
-        while(true) {
+        while (true) {
             try {
                 System.out.print("Digite uma nota entre 0 e 10: ");
                 nota = scan.nextDouble();
-                
-                if(nota >= 0 && nota <= 10) {
+
+                if (nota >= 0 && nota <= 10) {
                     break;
-                }
-                else {
+                } else {
                     System.out.println("Nota inválida! Digite uma nota entre 0 e 10.");
                 }
-            }
-            catch(Exception e) {
+            } catch (Exception e) {
                 System.out.println("Entrada inválida! Digite um número.");
                 scan.next();
             }
         }
 
-        System.out.println("Nota válida: " + nota);
+        System.out.println("Nota digitada: " + nota);
 
         scan.close();
     }
 }
-
