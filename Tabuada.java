@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /* 
@@ -17,17 +16,17 @@ import java.util.Scanner;
 
 public class Tabuada {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        try (Scanner scan = new Scanner(System.in)) {
+            System.out.println("Tabuada: ");
+            int tabuada = scan.nextInt();
 
-        System.out.println("Tabuada: ");
-        int tabuada = scan.nextInt();
+            System.out.println("Tabuada de " + tabuada);
 
-        System.out.println("Tabuada de " + tabuada);
+            for (int i = 1; i <= 10; i++ /* ou i = i + 1 */) {
 
-        for (int i = 1; i <= 10; i++ /* ou i = i + 1 */) {
+                System.out.println(tabuada + " x " + i + " = " + (tabuada * i));
 
-            System.out.println(tabuada + " x " + i + " = " + (tabuada * i));
-
+            }
         }
     }
 }
