@@ -40,7 +40,7 @@ public class Pilha {
         while (true) {
 
             if (noAuxiliar != null) {
-                stringRetorno += "[No{dado=" + noAuxiliar.getDado() + "}]\n";
+                stringRetorno += "[No{dado=" + noAuxiliar.getrefNo() + "}]\n";
                 noAuxiliar = noAuxiliar.getrefNo();
             } else {
                 break;
