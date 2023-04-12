@@ -71,7 +71,7 @@ public class Fila {
 }
 
 /*
- * código refatorado: passando diretamento o objeto nos métodos enqueue, firts e
+ * código refatorado: passando diretamente o objeto nos métodos enqueue, first e
  * dequeue.
  * 
  * public class Fila {
