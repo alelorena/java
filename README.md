@@ -1,1 +1,1 @@
-# Repositório com os meus exercícios  eprojetos na Linguagem Java.
+# Repositório com os exercícios  e estudos na Linguagem Java.
