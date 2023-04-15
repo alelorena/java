@@ -16,8 +16,8 @@ public class Main {
 
         // Empréstimo
         System.out.println("\n Exercício empréstimo \n");
-        Emprestimo.calcular(1000, Emprestimo.getDuasParcelas());
-        Emprestimo.calcular(1000, Emprestimo.getTresParcelas());
+        Emprestimo.calcular(1000, Emprestimo.getDuasParcelas()); // chamando um método dentro da classe calculaR
+        Emprestimo.calcular(1000, 3);
         Emprestimo.calcular(1000, 5);
     }
 }
