@@ -18,8 +18,10 @@ public class Carro {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Carro)) return false;
+        if (this == o)
+            return true;
+        if (!(o instanceof Carro))
+            return false;
         Carro carro = (Carro) o;
         return Objects.equals(getMarca(), carro.getMarca());
     }

@@ -2,7 +2,7 @@ import java.util.Stack;
 
 public class Main {
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
         Stack<Carro> stackCarros = new Stack<>();
 
@@ -11,13 +11,13 @@ public class Main {
         stackCarros.push(new Carro("Fiat"));
 
         System.out.println(stackCarros);
-        System.out.println(stackCarros.pop());
+        System.out.println(stackCarros.pop()); // retira da pilha
         System.out.println(stackCarros);
 
-        System.out.println(stackCarros.peek());
+        System.out.println(stackCarros.peek()); // mostra mas não retira da pilha
         System.out.println(stackCarros);
 
-        System.out.println(stackCarros.empty());
+        System.out.println(stackCarros.empty()); // testa se a pilha está vazia
 
     }
 
